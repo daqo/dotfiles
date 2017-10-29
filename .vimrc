@@ -14,9 +14,11 @@ Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'isRuslan/vim-es6'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 Plug 'mxw/vim-jsx'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-unimpaired'
+Plug 'w0rp/ale'
 
 " Initialize plugin system
 call plug#end()
@@ -525,3 +527,7 @@ nmap \x :cclose<CR>
 let g:jsx_ext_required = 0
 
 let g:used_javascript_libs = 'jquery,underscore,react,flux,d3'
+
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
