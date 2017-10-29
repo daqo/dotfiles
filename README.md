@@ -1,9 +1,9 @@
 daqo's dotfiles
 ---
 
-To install run `curl -Lks http://bit.do/daqo-dotfiles | /bin/bash`.
+To install run `curl -Lks http://bit.do/daqo-dotfiles | /bin/bash`. Be cautious, this will replace your existing dotfiles with the ones from this repo.
 
-To have all vim plugins installed you need to install vim-plug first:
+To have all vim plugins installed, you need to install vim-plug first:
 
 1. Install vim-plug
 ```
