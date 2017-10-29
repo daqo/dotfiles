@@ -501,7 +501,7 @@ nnoremap <c-g> :call SelectaIdentifier()<cr>
 " This stops the SQL model from doing unholy things to the C-c key
 let g:omni_sql_no_default_maps = 1
 
-
+" Open/Close NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
 " allow access to fzf binary
