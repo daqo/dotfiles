@@ -531,3 +531,8 @@ let g:used_javascript_libs = 'jquery,underscore,react,flux,d3'
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \}
+
+nmap <M-k>    :Ack! "\b<cword>\b" <CR>
+nmap <Esc>k   :Ack! "\b<cword>\b" <CR>
+nmap <M-S-k>  :Ggrep! "\b<cword>\b" <CR>
+nmap <Esc>K   :Ggrep! "\b<cword>\b" <CR>
