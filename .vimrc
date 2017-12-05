@@ -116,7 +116,7 @@ augroup vimrcEx
   autocmd FileType ruby,haml,eruby,yaml,html,sass,cucumber set ai sw=2 sts=2 et
   autocmd FileType python set sw=4 sts=4 et
 
-  autocmd! BufRead,BufNewFile *.sass setfiletype sass 
+  autocmd! BufRead,BufNewFile *.sass setfiletype sass
 
   autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&gt;
   autocmd BufRead *.markdown  set ai formatoptions=tcroqn2 comments=n:&gt;
@@ -536,3 +536,7 @@ nmap <M-k>    :Ack! "\b<cword>\b" <CR>
 nmap <Esc>k   :Ack! "\b<cword>\b" <CR>
 nmap <M-S-k>  :Ggrep! "\b<cword>\b" <CR>
 nmap <Esc>K   :Ggrep! "\b<cword>\b" <CR>
+
+" Details:bp("buffer previous") moves us to a different buffer in the current window (bn would work, too),
+" then bd # ("buffer delete" "alternate file") deletes the buffer we just moved away from.
+command Bd bp\|bd \#
